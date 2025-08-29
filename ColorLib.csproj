@@ -12,7 +12,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
         <Description>Library for creating mods. Allows you to use more colors than originally made in GKAPI and allows you to use HEX colors.</Description>
-        <PackageReleaseNotes></PackageReleaseNotes>
+        <PackageReleaseNotes> Added 146 colors, Fixed library malfunction</PackageReleaseNotes>
         <RepositoryUrl>https://github.com/Quest-play/ColorLib</RepositoryUrl>
         <PackageProjectUrl>https://github.com/Quest-play/ColorLib</PackageProjectUrl>
         <Copyright>Copyright © 2025 Quest-play</Copyright>
