@@ -28,41 +28,42 @@ public class Plugin : GkPlugin
     {
 
     }
-    
-    public static class ColorLib
+}
+
+public static class ColorLib
+{
+    public static readonly Colors Red = (Colors)0xFF0000;
+    public static readonly Colors Pink = (Colors)0xFFC0CB;
+    public static readonly Colors Orange = (Colors)0xFFA500;
+    public static readonly Colors Green = (Colors)0x008000;
+    public static readonly Colors Blue = (Colors)0x0000FF;
+    public static readonly Colors Yellow = (Colors)0xFFFF00;
+    public static readonly Colors Purple = (Colors)0x800080;
+    public static readonly Colors White = (Colors)0xFFFFFF;
+    public static readonly Colors Black = (Colors)0x000000;
+    public static readonly Colors Brown = (Colors)0xA52A2A;
+
+    // Quickly create color from int hex (0xRRGGBB)
+    public static Colors FromHex(int hex) => (Colors)hex;
+
+    // Quickly create color from RGB components
+    public static Colors FromRgb(byte r, byte g, byte b)
+        => (Colors)((r << 16) | (g << 8) | b);
+
+    // Try to parse HEX strings like "#RRGGBB" or "RRGGBB"
+    public static bool TryFromHexString(string hexString, out Colors color)
     {
-        public static readonly Colors LightGreen  = (Colors)0x6AFF6A;
-        public static readonly Colors Green       = (Colors)0x26C026;
-        public static readonly Colors DarkGreen   = (Colors)0x368936;
-        public static readonly Colors Blue        = (Colors)0x6A6AFF;
-        public static readonly Colors Yellow      = (Colors)0xFFFF6A;
-        public static readonly Colors Orange      = (Colors)0xFFA500;
-        public static readonly Colors Purple      = (Colors)0xA020F0;
-        public static readonly Colors White       = (Colors)0xFFFFFF;
-        public static readonly Colors Black       = (Colors)0x000000;
+        color = default;
+        if (string.IsNullOrWhiteSpace(hexString)) return false;
 
-        // Quickly create color from int hex (0xRRGGBB)
-        public static Colors FromHex(int hex) => (Colors)hex;
-
-        // Quickly create color from RGB components
-        public static Colors FromRgb(byte r, byte g, byte b)
-            => (Colors)((r << 16) | (g << 8) | b);
-
-        // Try to parse HEX strings like "#RRGGBB" or "RRGGBB"
-        public static bool TryFromHexString(string hexString, out Colors color)
+        var s = hexString.Trim();
+        if (s.StartsWith("#")) s = s.Substring(1);
+        if (int.TryParse(s, NumberStyles.HexNumber, CultureInfo.InvariantCulture, out var v))
         {
-            color = default;
-            if (string.IsNullOrWhiteSpace(hexString)) return false;
-
-            var s = hexString.Trim();
-            if (s.StartsWith("#")) s = s.Substring(1);
-            if (int.TryParse(s, NumberStyles.HexNumber, CultureInfo.InvariantCulture, out var v))
-            {
-                color = (Colors)v;
-                return true;
-            }
-
-            return false;
+            color = (Colors)v;
+            return true;
         }
+
+        return false;
     }
 }

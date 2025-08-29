@@ -22,4 +22,27 @@ A library that allows you to use HEX and RGB colors in mods. Also has built-in c
 
 # Examples of use
 
-Not yet
+<pre>
+using Gatekeeper.Items;
+using GKAPI.Items;
+using GKAPI.Lang;
+
+using static ColorLib.ColorLib; // ColorLib - colors
+
+namespace ColorLib.Example
+    public static class ItemRegister
+    {
+        private static object itemAPI;
+
+        public static void RegisterItems(ItemAPI itemAPI)
+        {
+
+            var testItem = itemAPI.AddItem(new GkItem.Builder("Test Item", "Test item description", $"{ColorHelper.WrapInColor("Some Text", DarkGreen)} {ColorHelper.WrapInColor("Some Text", Blue)} {ColorHelper.WrapInColor("Some Text", Purple) }.") // {ColorHelper.WrapInColor("Any Text", COLOR FROM COLORLIB)}
+            .SetUnlocked(true)
+            .SetHidden(false)
+            .AsModifier()
+            );
+        }
+    }
+}
+</pre>
