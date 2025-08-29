@@ -9,7 +9,7 @@ A library that allows you to use HEX and RGB colors in mods. Also has built-in c
 
 # Current State
 
-- Not published in Nuget
+- Published on [Nuget](https://www.nuget.org/packages/ColorLib/1.0.0). The dll can be [built from source](https://github.com/Quest-play/ColorLib?tab=readme-ov-file#build-from-source) though
 
 # Using the Library
 
