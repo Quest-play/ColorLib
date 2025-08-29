@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "Quest_play"
 name = "ColorLib"
-versionNumber = "1.0.0"
+versionNumber = "2.0.0"
 description = "Color Library Mod"
 websiteUrl = "https://github.com/Quest-play/ColorLib"
 containsNsfwContent = false
@@ -25,4 +25,4 @@ target = "./plugins/ColorLib"
 [publish]
 repository = "https://thunderstore.io"
 communities = ["gatekeeper"]
-categories = ["mods"]
+categories = ["mods", "libraries"]
