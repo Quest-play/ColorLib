@@ -30,6 +30,7 @@ using GKAPI.Lang;
 using static ColorLib.ColorLib; // ColorLib - colors
 
 namespace ColorLib.Example
+{
     public static class ItemRegister
     {
         private static object itemAPI;
@@ -46,3 +47,7 @@ namespace ColorLib.Example
     }
 }
 </pre>
+
+### Result
+
+![result](https://github.com/Quest-play/ColorLib/blob/main/docs/example.png)
