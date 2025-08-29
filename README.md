@@ -22,7 +22,7 @@ A library that allows you to use HEX and RGB colors in mods. Also has built-in c
 
 # Examples of use
 
-<pre>
+```csharp
 using Gatekeeper.Items;
 using GKAPI.Items;
 using GKAPI.Lang;
@@ -46,8 +46,8 @@ namespace ColorLib.Example
         }
     }
 }
-</pre>
+```
 
 ### Result
 
-![result](https://github.com/Quest-play/ColorLib/blob/main/docs/example.png)
+![result](https://raw.githubusercontent.com/Quest-play/ColorLib/main/docs/example.png)

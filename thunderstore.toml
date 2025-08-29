@@ -20,7 +20,7 @@ outdir = "./build"
 
 [[build.copy]]
 source = "./ReleaseOutput"
-target = "./plugins/MoreDifficulties"
+target = "./plugins/ColorLib"
 
 [publish]
 repository = "https://thunderstore.io"

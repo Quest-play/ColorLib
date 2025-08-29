@@ -40,7 +40,6 @@ public static class ColorLib
     public static readonly Colors Yellow = (Colors)0xFFFF00;
     public static readonly Colors Purple = (Colors)0x800080;
     public static readonly Colors White = (Colors)0xFFFFFF;
-    public static readonly Colors Black = (Colors)0x000000;
     public static readonly Colors Brown = (Colors)0xA52A2A;
 
     // Quickly create color from int hex (0xRRGGBB)
