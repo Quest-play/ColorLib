@@ -4,14 +4,12 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "Quest_play"
 name = "ColorLib"
-versionNumber = "2.0.0"
+versionNumber = "2.1.0"
 description = "Color Library Mod"
 websiteUrl = "https://github.com/Quest-play/ColorLib"
 containsNsfwContent = false
 
 [package.dependencies]
-BepInEx-BepInExPack_IL2CPP = "6.0.733"
-GatekeeperModding-GKAPI = "0.1.8"
 
 [build]
 icon = "./icon.png"
@@ -25,4 +23,4 @@ target = "./plugins/ColorLib"
 [publish]
 repository = "https://thunderstore.io"
 communities = ["gatekeeper"]
-categories = ["mods", "libraries"]
+categories = ["libraries"]

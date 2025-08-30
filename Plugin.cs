@@ -104,7 +104,6 @@ public static class TextColor
     public static readonly String Plum = "#DDA0DD";
     public static readonly String Violet = "#EE82EE";
     public static readonly String Orchid = "#DA70D6";
-    public static readonly String Fuchsia = "#FF00FF";
     public static readonly String Magenta = "#FF00FF";
     public static readonly String MediumOrchid = "#BA55D3";
     public static readonly String MediumPurple = "#9370DB";
