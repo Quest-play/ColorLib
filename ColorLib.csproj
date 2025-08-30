@@ -8,11 +8,11 @@
         <Authors>Quest_Play</Authors>
         <PackageId>ColorLib</PackageId>
         <Title>ColorLib</Title>
-        <Version>2.1.0</Version>
+        <Version>3.0.0</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
         <Description>The library includes 146 color HEX codes and allows you to convert RGB to HEX.</Description>
-        <PackageReleaseNotes>Dependencies removed.</PackageReleaseNotes>
+        <PackageReleaseNotes>The libraries have been completely redesigned. The old color processing has been removed and a new one has been added that works correctly.</PackageReleaseNotes>
         <RepositoryUrl>https://github.com/Quest-play/ColorLib</RepositoryUrl>
         <PackageProjectUrl>https://github.com/Quest-play/ColorLib</PackageProjectUrl>
         <Copyright>Copyright © 2025 Quest-play</Copyright>
@@ -26,9 +26,4 @@
         <RootNamespace>ColorLib</RootNamespace>
         <PackageTags>Gatekeeper Colors HEX RGB Modding GKModding Library</PackageTags>
     </PropertyGroup>
-
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(IsDevEnv)'=='true' ">
-        <Exec Command="xcopy /q /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Gatekeeper\BepInEx\plugins&quot; &gt; nul"/>
-        <Exec Command="python ../../Tools/autoversion/versioner.py $(ProjectName)"/>
-    </Target>
 </Project>
