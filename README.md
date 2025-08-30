@@ -15,4 +15,4 @@ The library includes 146 color HEX codes and allows you to convert RGB to HEX.
 - The built dll is in the folder ``bin/Debug/net6.0/ColorLib.dll``
 
 
-Examples can be found [here]().
+Examples can be found [here](https://github.com/Quest-play/ColorLib/tree/38d42ffc648a06c9f0a85ea908da4f9f60083e64/docs).
